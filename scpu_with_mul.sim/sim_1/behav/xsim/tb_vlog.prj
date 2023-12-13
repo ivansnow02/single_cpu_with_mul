@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/32mult.v" \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/adder.v" \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/alu.v" \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/data_ram.v" \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/inst_rom.v" \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/regfile.v" \
+"../../../../scpu_with_mul.srcs/sources_1/imports/带乘法cpu/single_cycle_cpu.v" \
+"../../../../scpu_with_mul.srcs/sim_1/imports/带乘法cpu/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
